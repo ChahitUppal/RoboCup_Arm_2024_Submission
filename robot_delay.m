@@ -32,11 +32,11 @@ function waitForSucceeded(sub, controller_name)
 end
 
 % Wait for the status to become "SUCCEEDED" for the trajectory controller
-%waitForSucceeded(traj_sub, 'Trajectory');
+waitForSucceeded(traj_sub, 'Trajectory');
 
 % Wait for the status to become "SUCCEEDED" for the gripper controller
 %waitForSucceeded(grip_sub, 'Gripper');
 
-pause(10);
+pause(15);
 
 disp('Completed');
