@@ -19,7 +19,7 @@ function waitForSucceeded(sub, controller_name)
             for i = 1:length(msg.StatusList)
                 status = msg.StatusList(i).Status;
                 % Debug: Display each status
-                disp(['Goal status: ', num2str(status)]);
+                % disp(['Goal status: ', num2str(status)]);
                 
                 % 3 corresponds to SUCCEEDED
                 if status == 3
