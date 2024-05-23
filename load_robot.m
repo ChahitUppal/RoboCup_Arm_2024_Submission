@@ -16,6 +16,7 @@ ikWeights = [0.25 0.25 0.25 0.1 0.1 .1]; % configuration weights for IK solver [
 open_grip_pos = 0.01;
 bottle_grip = 0.517;
 can_grip = 0.25;
+pouch_grip = 0.61;
 green_bin_location = [-0.46 -0.3 0.5];
 blue_bin_location = [0.46 -0.35 0.5];
 drop_gripper_orient = [pi/2 -pi 0];

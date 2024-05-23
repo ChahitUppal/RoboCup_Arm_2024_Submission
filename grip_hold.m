@@ -9,6 +9,8 @@ function hold_position=grip_hold(hold_position,gripGoal,gripAct)
     elseif hold_position == "can_grip"
         %close the gripper
         gripGoal=packGripGoal(can_grip,gripGoal);
+    elseif hold_position == "pouch_grip"
+        gripGoal=packGripGoal(pouch_grip,gripGoal);
     else
         %if the user gives a position, we will hold the gripper at that position
         %hold the gripper at the given position
