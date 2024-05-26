@@ -5,6 +5,5 @@ initialIKGuess(1).JointPosition = -1.5;
 trajGoal = packTrajGoal(initialIKGuess,trajGoal);
 sendGoal(trajAct,trajGoal); 
 
-%run robot_delay.m
-%gripGoal=packGripGoal(0.01 ,gripGoal);
-%sendGoal(gripAct,gripGoal);
+run robot_delay.m
+

@@ -10,8 +10,8 @@ function waitForSucceeded(sub, controller_name)
         msg = receive(sub);
         
         % Debug: Display received message
-        disp(['Received message from ', controller_name, ' status topic:']);
-        disp(msg);
+        % disp(['Received message from ', controller_name, ' status topic:']);
+        %disp(msg);
         
         % Check if StatusList is not empty
         if ~isempty(msg.StatusList)
@@ -37,6 +37,7 @@ waitForSucceeded(traj_sub, 'Trajectory');
 % Wait for the status to become "SUCCEEDED" for the gripper controller
 %waitForSucceeded(grip_sub, 'Gripper');
 
+% Adding a delay for the arm to stabilize before moving on
 pause(15);
 
 disp('Completed');

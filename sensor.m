@@ -1,5 +1,5 @@
 % Define region of interest
-region = [250, 350, 550, 640]; % [y_start, y_end, x_start, x_end]
+region = [250, 350, 300, 400]; % [y_start, y_end, x_start, x_end]
 
 % Subscribe to the color and depth image topics
 colorImageSub = rossubscriber('/camera/rgb/image_raw');
@@ -26,6 +26,7 @@ try
     ylim([0.5, height + 0.5]);
 
     % Determine tick spacing based on default tickStep
+    tickStep = 50;
     xLim = get(gca, 'XLim');
     yLim = get(gca, 'YLim');
     xTickSpacing = tickStep * diff(xLim) / width;
@@ -66,6 +67,8 @@ try
 
     % Negate the depth data for correct axis display
     depthData = -depthData;
+    
+    % % depthData = round(depthData, 3); % Round to 3 decimal places
 
     % Display the 3D depth visualization with RGB texture
     figure(depthFig);
