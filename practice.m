@@ -4,7 +4,7 @@ drop_location = [-0.42 0.75 0.15];
 pick_location = [-0.42 0.75 0.125];
 %gripperTranslation = drop_location; 
 %gripperTranslation = pick_location; 
-gripperTranslation = [0.03 0.53 0.067]; %[Z = (-ve)left right, Y = front back ; X = height from the table]
+gripperTranslation = [-0.505 0.40 0.13]; %[Z = (-ve)left right, Y = front back ; X = height from the table]
 %gripperTranslation = [0 0.3 0.5];
 gripperRotation = [-pi/2 -pi 0]; %  [Z Y X]radian [ Z=on the side y=further away from the arm X=hieght of the table]
 
