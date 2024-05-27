@@ -8,7 +8,7 @@ tform(1:3,4) = gripperTranslation';
 trajGoal = packTrajGoal(configSoln,trajGoal); 
 sendGoal(trajAct,trajGoal); 
 
-pause(5)
+pause(10);
 
 gripGoal=packGripGoal(open_grip_pos,gripGoal);
 sendGoal(gripAct,gripGoal);
