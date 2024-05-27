@@ -1,7 +1,7 @@
 % Initialize figures for display
 colorFig = figure('Name', 'Color Image');
 region = [25, 75, 275, 375];
-region = [375, 425, 300, 350];
+%region = [375, 425, 300, 350];
 
 
 try

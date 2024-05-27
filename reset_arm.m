@@ -17,3 +17,6 @@ initialIKGuess(1).JointPosition = 0;
 initialIKGuess(4).JointPosition = 0;
 trajGoal = packTrajGoal(initialIKGuess,trajGoal);
 sendGoal(trajAct,trajGoal); 
+
+gripGoal=packGripGoal(open_grip_pos,gripGoal);
+sendGoal(gripAct,gripGoal);
