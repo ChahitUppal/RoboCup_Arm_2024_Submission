@@ -53,7 +53,7 @@ function obj_type = object_checker(cap_region)
         obj_type = 'bottle_grip';
         fprintf("Object is bottle")
     else
-        obj_type = 'Object is can';
+        obj_type = 'can_grip';
         fprintf("Object is can")
     end
 end
